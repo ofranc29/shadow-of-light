@@ -23,21 +23,32 @@ video {
     z-index: -100;
 }
 
+#home, body, html {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
  h1 {
+    display: block;
     font-family: Lovello;
     font-weight: normal;
     font-style: normal;
-    font-size: 6em;
+    font-size: 7vw;
     padding: 20px;
     margin: 0px;
  }
 
  .brand_container {
-    position: absolute;
+    display: flex;
     background-color: rgba(0, 0, 0, 0.295);
     color: #fff;
     text-align: center;
-    top: 45%;
-    left: 0;
+    align-items: center;
+    justify-content: center;
     width: 100%;
  }
