@@ -25,15 +25,42 @@ video {
 
 #home, body, html {
     display: flex;
+    flex-direction: column;
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
+}
+
+#home {
+    height: 90%;
     align-items: center;
     justify-content: center;
 }
 
- h1 {
+#footer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    min-height: 10%;
+    background-color: #000;
+    bottom: 0;
+}
+
+#footer > ul {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+    justify-content: space-between;
+    margin: auto 20%;
+}
+
+h1 {
     display: block;
     font-family: Lovello;
     font-weight: normal;
@@ -43,7 +70,7 @@ video {
     margin: 0px;
  }
 
- .brand_container {
+.brand_container {
     display: flex;
     background-color: rgba(0, 0, 0, 0.295);
     color: #fff;
@@ -51,4 +78,9 @@ video {
     align-items: center;
     justify-content: center;
     width: 100%;
- }
+}
+
+.footer_social_logo {
+    max-width: 33%;
+    min-height: 33%;
+}
