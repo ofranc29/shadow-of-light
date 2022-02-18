@@ -4,6 +4,20 @@
     src: url("fonts/Lovelo-LineBold.woff") format("woff");
 }
 
+h1 {
+    display: block;
+    font-family: Lovello;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 7vw;
+    padding: 20px;
+    margin: 0px;
+ }
+
+ul {
+    list-style: none;
+}
+
 /* Style the video: 100% width and height to cover the entire window */
 .video_container {
     position: absolute;
@@ -38,38 +52,6 @@ video {
     justify-content: center;
 }
 
-#footer {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    min-height: 10%;
-    background-color: #000;
-    bottom: 0;
-}
-
-#footer > ul {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    flex-direction: row;
-    list-style: none;
-    width: 100%;
-    justify-content: space-between;
-    margin: auto 20%;
-}
-
-h1 {
-    display: block;
-    font-family: Lovello;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 7vw;
-    padding: 20px;
-    margin: 0px;
- }
-
 .brand_container {
     display: flex;
     background-color: rgba(0, 0, 0, 0.295);
@@ -80,7 +62,38 @@ h1 {
     width: 100%;
 }
 
+#footer {
+    position: absolute;
+    display: block;
+    width: 100%;
+    min-height: 10%;
+    background-color: #000;
+    bottom: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: auto;
+    width: 70%;
+    margin: auto;
+}
+
+.social_links_grp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 43%;
+    min-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
 .footer_social_logo {
-    max-width: 33%;
-    min-height: 33%;
+    width: 45px;
 }
